@@ -1,0 +1,982 @@
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local wholegui = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local playerinfo = Instance.new("TextLabel")
+local playerinfouserid = Instance.new("TextLabel")
+local playerinfousername = Instance.new("TextLabel")
+local playerinfodisplayname = Instance.new("TextLabel")
+local login = Instance.new("TextButton")
+local PlayerText = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Page1 = Instance.new("Frame")
+local title_2 = Instance.new("TextLabel")
+local ImageLabel1 = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local INFYIELD = Instance.new("TextButton")
+local ADMINTITLE = Instance.new("TextLabel")
+local CMDX = Instance.new("TextButton")
+local FatesAdmin = Instance.new("TextButton")
+local Back = Instance.new("TextButton")
+local Next = Instance.new("TextButton")
+local BackTitle = Instance.new("TextLabel")
+local NextTitle = Instance.new("TextLabel")
+local PageNumber = Instance.new("TextLabel")
+local TeapotEnabler = Instance.new("Frame")
+local Activate = Instance.new("TextButton")
+local Disable = Instance.new("TextButton")
+local PlayerInfo = Instance.new("Frame")
+local title_3 = Instance.new("TextLabel")
+local ImageLabel1_2 = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local playerinfousername_2 = Instance.new("TextLabel")
+local playerinfouserid_2 = Instance.new("TextLabel")
+local playerinfodisplayname_2 = Instance.new("TextLabel")
+local Page2 = Instance.new("Frame")
+local title_4 = Instance.new("TextLabel")
+local ImageLabel1_3 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Misc = Instance.new("TextLabel")
+local Back_2 = Instance.new("TextButton")
+local Next_2 = Instance.new("TextButton")
+local BackTitle_2 = Instance.new("TextLabel")
+local NextTitle_2 = Instance.new("TextLabel")
+local FatesAdmin_2 = Instance.new("TextButton")
+local Misc_2 = Instance.new("TextLabel")
+local PageNumber_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+wholegui.Name = "whole gui"
+wholegui.Parent = ScreenGui
+wholegui.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+wholegui.Position = UDim2.new(0.577881575, 0, 0.185935631, 0)
+wholegui.Size = UDim2.new(0, 468, 0, 215)
+
+title.Name = "title"
+title.Parent = wholegui
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(0, 117, 0, 25)
+title.Font = Enum.Font.SourceSans
+title.Text = "Crimson Panel"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+playerinfo.Name = "player info"
+playerinfo.Parent = wholegui
+playerinfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfo.BackgroundTransparency = 1.000
+playerinfo.Position = UDim2.new(0.358974367, 0, 0.116279066, 0)
+playerinfo.Size = UDim2.new(0, 117, 0, 25)
+playerinfo.Font = Enum.Font.SourceSans
+playerinfo.Text = "PLAYER INFO"
+playerinfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfo.TextScaled = true
+playerinfo.TextSize = 14.000
+playerinfo.TextWrapped = true
+
+playerinfouserid.Name = "playerinfouserid"
+playerinfouserid.Parent = wholegui
+playerinfouserid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfouserid.BackgroundTransparency = 1.000
+playerinfouserid.Position = UDim2.new(0.358974367, 0, 0.265116274, 0)
+playerinfouserid.Size = UDim2.new(0, 117, 0, 25)
+playerinfouserid.Font = Enum.Font.SourceSans
+playerinfouserid.Text = "UserID:"
+playerinfouserid.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfouserid.TextScaled = true
+playerinfouserid.TextSize = 14.000
+playerinfouserid.TextWrapped = true
+
+playerinfousername.Name = "playerinfousername"
+playerinfousername.Parent = wholegui
+playerinfousername.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfousername.BackgroundTransparency = 1.000
+playerinfousername.Position = UDim2.new(0.358974367, 0, 0.38139534, 0)
+playerinfousername.Size = UDim2.new(0, 117, 0, 25)
+playerinfousername.Font = Enum.Font.SourceSans
+playerinfousername.Text = "username:"
+playerinfousername.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfousername.TextScaled = true
+playerinfousername.TextSize = 14.000
+playerinfousername.TextWrapped = true
+
+playerinfodisplayname.Name = "playerinfodisplayname"
+playerinfodisplayname.Parent = wholegui
+playerinfodisplayname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfodisplayname.BackgroundTransparency = 1.000
+playerinfodisplayname.Position = UDim2.new(0.358974367, 0, 0.497674406, 0)
+playerinfodisplayname.Size = UDim2.new(0, 117, 0, 25)
+playerinfodisplayname.Font = Enum.Font.SourceSans
+playerinfodisplayname.Text = "DisplayName:"
+playerinfodisplayname.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfodisplayname.TextScaled = true
+playerinfodisplayname.TextSize = 14.000
+playerinfodisplayname.TextWrapped = true
+
+login.Name = "login"
+login.Parent = wholegui
+login.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+login.Position = UDim2.new(0, 0, 0.790697694, 0)
+login.Size = UDim2.new(0, 468, 0, 34)
+login.Font = Enum.Font.SourceSans
+login.Text = "Login"
+login.TextColor3 = Color3.fromRGB(0, 0, 0)
+login.TextSize = 14.000
+
+PlayerText.Name = "Player Text"
+PlayerText.Parent = ScreenGui
+PlayerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerText.Position = UDim2.new(-0.0685358271, 0, -0.0858164504, 0)
+PlayerText.Size = UDim2.new(0, 88, 0, 86)
+PlayerText.Visible = false
+
+TextLabel.Parent = PlayerText
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(1.18152702, 0, 9.16511631, 0)
+TextLabel.Size = UDim2.new(0, 1268, 0, 65)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Player:"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Page1.Name = "Page1"
+Page1.Parent = ScreenGui
+Page1.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+Page1.BorderSizePixel = 0
+Page1.Position = UDim2.new(0.581775725, 0, 0.182359949, 0)
+Page1.Size = UDim2.new(0, 468, 0, 223)
+Page1.Visible = false
+
+title_2.Name = "title"
+title_2.Parent = Page1
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Size = UDim2.new(0, 117, 0, 25)
+title_2.Font = Enum.Font.SourceSans
+title_2.Text = "Crimson Panel"
+title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+title_2.TextScaled = true
+title_2.TextSize = 14.000
+title_2.TextWrapped = true
+
+ImageLabel1.Name = "ImageLabel1"
+ImageLabel1.Parent = title_2
+ImageLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel1.Position = UDim2.new(0, 0, 1, 0)
+ImageLabel1.Size = UDim2.new(0, 467, 0, 189)
+ImageLabel1.Visible = false
+ImageLabel1.Image = "rbxassetid://5918012718"
+
+ImageLabel.Parent = title_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(1, 0, -0.0378393568, 0)
+ImageLabel.Size = UDim2.new(0, 350, 0, 25)
+ImageLabel.Visible = false
+ImageLabel.Image = "rbxassetid://5918012718"
+
+INFYIELD.Name = "INFYIELD"
+INFYIELD.Parent = Page1
+INFYIELD.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+INFYIELD.Position = UDim2.new(0.0683760718, 0, 0.250413001, 0)
+INFYIELD.Size = UDim2.new(0, 134, 0, 34)
+INFYIELD.Font = Enum.Font.SourceSans
+INFYIELD.Text = "Infinite Yield"
+INFYIELD.TextColor3 = Color3.fromRGB(0, 0, 0)
+INFYIELD.TextScaled = true
+INFYIELD.TextSize = 14.000
+INFYIELD.TextWrapped = true
+
+ADMINTITLE.Name = "ADMINTITLE"
+ADMINTITLE.Parent = Page1
+ADMINTITLE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ADMINTITLE.BackgroundTransparency = 1.000
+ADMINTITLE.Position = UDim2.new(0.341880351, 0, 0.0807174891, 0)
+ADMINTITLE.Size = UDim2.new(0, 117, 0, 25)
+ADMINTITLE.Font = Enum.Font.SourceSans
+ADMINTITLE.Text = "ADMINS"
+ADMINTITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+ADMINTITLE.TextScaled = true
+ADMINTITLE.TextSize = 14.000
+ADMINTITLE.TextWrapped = true
+
+CMDX.Name = "CMDX"
+CMDX.Parent = Page1
+CMDX.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+CMDX.Position = UDim2.new(0.425213665, 0, 0.250413001, 0)
+CMDX.Size = UDim2.new(0, 134, 0, 34)
+CMDX.Font = Enum.Font.SourceSans
+CMDX.Text = "Cmd X"
+CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.TextScaled = true
+CMDX.TextSize = 14.000
+CMDX.TextWrapped = true
+
+FatesAdmin.Name = "FatesAdmin"
+FatesAdmin.Parent = Page1
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+FatesAdmin.Position = UDim2.new(0.0683760643, 0, 0.488081157, 0)
+FatesAdmin.Size = UDim2.new(0, 134, 0, 34)
+FatesAdmin.Font = Enum.Font.SourceSans
+FatesAdmin.Text = "Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.TextScaled = true
+FatesAdmin.TextSize = 14.000
+FatesAdmin.TextWrapped = true
+
+Back.Name = "Back"
+Back.Parent = Page1
+Back.BackgroundColor3 = Color3.fromRGB(157, 0, 0)
+Back.Position = UDim2.new(0.369658142, 0, 0.739910305, 0)
+Back.Size = UDim2.new(0, 26, 0, 26)
+Back.Font = Enum.Font.SourceSans
+Back.Text = "<"
+Back.TextColor3 = Color3.fromRGB(0, 0, 0)
+Back.TextSize = 14.000
+
+Next.Name = "Next"
+Next.Parent = Page1
+Next.BackgroundColor3 = Color3.fromRGB(157, 0, 0)
+Next.Position = UDim2.new(0.470085502, 0, 0.739910305, 0)
+Next.Size = UDim2.new(0, 26, 0, 26)
+Next.Font = Enum.Font.SourceSans
+Next.Text = ">"
+Next.TextColor3 = Color3.fromRGB(0, 0, 0)
+Next.TextSize = 14.000
+
+BackTitle.Name = "BackTitle"
+BackTitle.Parent = Page1
+BackTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BackTitle.BackgroundTransparency = 1.000
+BackTitle.Position = UDim2.new(0.149572641, 0, 0.739910364, 0)
+BackTitle.Size = UDim2.new(0, 117, 0, 25)
+BackTitle.Font = Enum.Font.SourceSans
+BackTitle.Text = "Back"
+BackTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+BackTitle.TextScaled = true
+BackTitle.TextSize = 14.000
+BackTitle.TextWrapped = true
+
+NextTitle.Name = "NextTitle"
+NextTitle.Parent = Page1
+NextTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NextTitle.BackgroundTransparency = 1.000
+NextTitle.Position = UDim2.new(0.497863263, 0, 0.74439466, 0)
+NextTitle.Size = UDim2.new(0, 117, 0, 25)
+NextTitle.Font = Enum.Font.SourceSans
+NextTitle.Text = "Next"
+NextTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+NextTitle.TextScaled = true
+NextTitle.TextSize = 14.000
+NextTitle.TextWrapped = true
+
+PageNumber.Name = "PageNumber"
+PageNumber.Parent = Page1
+PageNumber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PageNumber.BackgroundTransparency = 1.000
+PageNumber.Position = UDim2.new(0.856837451, 0, 0, 0)
+PageNumber.Size = UDim2.new(0, 78, 0, 17)
+PageNumber.Font = Enum.Font.SourceSans
+PageNumber.Text = "Page 1"
+PageNumber.TextColor3 = Color3.fromRGB(255, 255, 255)
+PageNumber.TextScaled = true
+PageNumber.TextSize = 14.000
+PageNumber.TextWrapped = true
+
+TeapotEnabler.Name = "TeapotEnabler"
+TeapotEnabler.Parent = ScreenGui
+TeapotEnabler.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TeapotEnabler.Position = UDim2.new(0.109813094, 0, -0.00119185448, 0)
+TeapotEnabler.Size = UDim2.new(0, 362, 0, 56)
+TeapotEnabler.Visible = false
+
+Activate.Name = "Activate"
+Activate.Parent = TeapotEnabler
+Activate.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+Activate.Position = UDim2.new(0.0405982919, 0, 0.223507166, 0)
+Activate.Size = UDim2.new(0, 134, 0, 34)
+Activate.Font = Enum.Font.SourceSans
+Activate.Text = "Activate 1x1x1x1 Teapot Theme"
+Activate.TextColor3 = Color3.fromRGB(0, 0, 0)
+Activate.TextScaled = true
+Activate.TextSize = 14.000
+Activate.TextWrapped = true
+
+Disable.Name = "Disable"
+Disable.Parent = TeapotEnabler
+Disable.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+Disable.Position = UDim2.new(0.433087766, 0, 0.187792882, 0)
+Disable.Size = UDim2.new(0, 134, 0, 34)
+Disable.Font = Enum.Font.SourceSans
+Disable.Text = "Disable 1x1x1x1 Teapot Theme"
+Disable.TextColor3 = Color3.fromRGB(0, 0, 0)
+Disable.TextScaled = true
+Disable.TextSize = 14.000
+Disable.TextWrapped = true
+
+PlayerInfo.Name = "Player Info"
+PlayerInfo.Parent = ScreenGui
+PlayerInfo.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+PlayerInfo.BorderSizePixel = 0
+PlayerInfo.Position = UDim2.new(0.391744554, 0, -0.00119185448, 0)
+PlayerInfo.Size = UDim2.new(0, 232, 0, 178)
+PlayerInfo.Visible = false
+
+title_3.Name = "title"
+title_3.Parent = PlayerInfo
+title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_3.BackgroundTransparency = 1.000
+title_3.Position = UDim2.new(0.24568966, 0, 0, 0)
+title_3.Size = UDim2.new(0, 117, 0, 25)
+title_3.Font = Enum.Font.SourceSans
+title_3.Text = "PLAYER INFO"
+title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+title_3.TextScaled = true
+title_3.TextSize = 14.000
+title_3.TextWrapped = true
+
+ImageLabel1_2.Name = "ImageLabel1"
+ImageLabel1_2.Parent = title_3
+ImageLabel1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel1_2.Position = UDim2.new(0, 0, 1, 0)
+ImageLabel1_2.Size = UDim2.new(0, 467, 0, 189)
+ImageLabel1_2.Visible = false
+ImageLabel1_2.Image = "rbxassetid://5918012718"
+
+ImageLabel_2.Parent = title_3
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.Position = UDim2.new(1, 0, -0.0378393568, 0)
+ImageLabel_2.Size = UDim2.new(0, 350, 0, 25)
+ImageLabel_2.Visible = false
+ImageLabel_2.Image = "rbxassetid://5918012718"
+
+playerinfousername_2.Name = "playerinfousername"
+playerinfousername_2.Parent = PlayerInfo
+playerinfousername_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfousername_2.BackgroundTransparency = 1.000
+playerinfousername_2.Position = UDim2.new(0.242595047, 0, 0.173530176, 0)
+playerinfousername_2.Size = UDim2.new(0, 117, 0, 25)
+playerinfousername_2.Font = Enum.Font.SourceSans
+playerinfousername_2.Text = "username:"
+playerinfousername_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfousername_2.TextScaled = true
+playerinfousername_2.TextSize = 14.000
+playerinfousername_2.TextWrapped = true
+
+playerinfouserid_2.Name = "playerinfouserid"
+playerinfouserid_2.Parent = PlayerInfo
+playerinfouserid_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfouserid_2.BackgroundTransparency = 1.000
+playerinfouserid_2.Position = UDim2.new(0.246905401, 0, 0.38871178, 0)
+playerinfouserid_2.Size = UDim2.new(0, 117, 0, 25)
+playerinfouserid_2.Font = Enum.Font.SourceSans
+playerinfouserid_2.Text = "UserID:"
+playerinfouserid_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfouserid_2.TextScaled = true
+playerinfouserid_2.TextSize = 14.000
+playerinfouserid_2.TextWrapped = true
+
+playerinfodisplayname_2.Name = "playerinfodisplayname"
+playerinfodisplayname_2.Parent = PlayerInfo
+playerinfodisplayname_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+playerinfodisplayname_2.BackgroundTransparency = 1.000
+playerinfodisplayname_2.Position = UDim2.new(0.242595047, 0, 0.626887918, 0)
+playerinfodisplayname_2.Size = UDim2.new(0, 117, 0, 25)
+playerinfodisplayname_2.Font = Enum.Font.SourceSans
+playerinfodisplayname_2.Text = "DisplayName:"
+playerinfodisplayname_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+playerinfodisplayname_2.TextScaled = true
+playerinfodisplayname_2.TextSize = 14.000
+playerinfodisplayname_2.TextWrapped = true
+
+Page2.Name = "Page2"
+Page2.Parent = ScreenGui
+Page2.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+Page2.BorderSizePixel = 0
+Page2.Position = UDim2.new(0.581775725, 0, 0.182359949, 0)
+Page2.Size = UDim2.new(0, 468, 0, 223)
+Page2.Visible = false
+
+title_4.Name = "title"
+title_4.Parent = Page2
+title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_4.BackgroundTransparency = 1.000
+title_4.Size = UDim2.new(0, 117, 0, 25)
+title_4.Font = Enum.Font.SourceSans
+title_4.Text = "Crimson Panel"
+title_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+title_4.TextScaled = true
+title_4.TextSize = 14.000
+title_4.TextWrapped = true
+
+ImageLabel1_3.Name = "ImageLabel1"
+ImageLabel1_3.Parent = title_4
+ImageLabel1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel1_3.Position = UDim2.new(0, 0, 1, 0)
+ImageLabel1_3.Size = UDim2.new(0, 467, 0, 189)
+ImageLabel1_3.Visible = false
+ImageLabel1_3.Image = "rbxassetid://5918012718"
+
+ImageLabel_3.Parent = title_4
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.Position = UDim2.new(1, 0, -0.0378393568, 0)
+ImageLabel_3.Size = UDim2.new(0, 350, 0, 25)
+ImageLabel_3.Visible = false
+ImageLabel_3.Image = "rbxassetid://5918012718"
+
+Misc.Name = "Misc"
+Misc.Parent = Page2
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0.329059839, 0, 0.11210762, 0)
+Misc.Size = UDim2.new(0, 117, 0, 25)
+Misc.Font = Enum.Font.SourceSansBold
+Misc.Text = "MISC"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+Back_2.Name = "Back"
+Back_2.Parent = Page2
+Back_2.BackgroundColor3 = Color3.fromRGB(157, 0, 0)
+Back_2.Position = UDim2.new(0.369658142, 0, 0.739910305, 0)
+Back_2.Size = UDim2.new(0, 26, 0, 26)
+Back_2.Font = Enum.Font.SourceSans
+Back_2.Text = "<"
+Back_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Back_2.TextSize = 14.000
+
+Next_2.Name = "Next"
+Next_2.Parent = Page2
+Next_2.BackgroundColor3 = Color3.fromRGB(157, 0, 0)
+Next_2.Position = UDim2.new(0.470085502, 0, 0.739910305, 0)
+Next_2.Size = UDim2.new(0, 26, 0, 26)
+Next_2.Font = Enum.Font.SourceSans
+Next_2.Text = ">"
+Next_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Next_2.TextSize = 14.000
+
+BackTitle_2.Name = "BackTitle"
+BackTitle_2.Parent = Page2
+BackTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BackTitle_2.BackgroundTransparency = 1.000
+BackTitle_2.Position = UDim2.new(0.149572641, 0, 0.739910364, 0)
+BackTitle_2.Size = UDim2.new(0, 117, 0, 25)
+BackTitle_2.Font = Enum.Font.SourceSans
+BackTitle_2.Text = "Back"
+BackTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BackTitle_2.TextScaled = true
+BackTitle_2.TextSize = 14.000
+BackTitle_2.TextWrapped = true
+
+NextTitle_2.Name = "NextTitle"
+NextTitle_2.Parent = Page2
+NextTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NextTitle_2.BackgroundTransparency = 1.000
+NextTitle_2.Position = UDim2.new(0.497863263, 0, 0.74439466, 0)
+NextTitle_2.Size = UDim2.new(0, 117, 0, 25)
+NextTitle_2.Font = Enum.Font.SourceSans
+NextTitle_2.Text = "Next"
+NextTitle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+NextTitle_2.TextScaled = true
+NextTitle_2.TextSize = 14.000
+NextTitle_2.TextWrapped = true
+
+FatesAdmin_2.Name = "FatesAdmin"
+FatesAdmin_2.Parent = Page2
+FatesAdmin_2.BackgroundColor3 = Color3.fromRGB(255, 21, 21)
+FatesAdmin_2.Position = UDim2.new(0.0662393123, 0, 0.268350214, 0)
+FatesAdmin_2.Size = UDim2.new(0, 134, 0, 34)
+FatesAdmin_2.Font = Enum.Font.SourceSans
+FatesAdmin_2.Text = "Pendulum Hub"
+FatesAdmin_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin_2.TextScaled = true
+FatesAdmin_2.TextSize = 14.000
+FatesAdmin_2.TextWrapped = true
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = Page2
+Misc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc_2.BackgroundTransparency = 1.000
+Misc_2.Position = UDim2.new(0.329059839, 0, 0.51121074, 0)
+Misc_2.Size = UDim2.new(0, 117, 0, 25)
+Misc_2.Font = Enum.Font.SourceSansBold
+Misc_2.Text = "More Soon!"
+Misc_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc_2.TextScaled = true
+Misc_2.TextSize = 14.000
+Misc_2.TextWrapped = true
+
+PageNumber_2.Name = "PageNumber"
+PageNumber_2.Parent = Page2
+PageNumber_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PageNumber_2.BackgroundTransparency = 1.000
+PageNumber_2.Position = UDim2.new(0.856837451, 0, 0, 0)
+PageNumber_2.Size = UDim2.new(0, 78, 0, 17)
+PageNumber_2.Font = Enum.Font.SourceSans
+PageNumber_2.Text = "Page 2"
+PageNumber_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PageNumber_2.TextScaled = true
+PageNumber_2.TextSize = 14.000
+PageNumber_2.TextWrapped = true
+
+-- Scripts:
+
+local function FYRQCR_fake_script() -- wholegui.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', wholegui)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(FYRQCR_fake_script)()
+local function SNNTS_fake_script() -- playerinfouserid.LocalScript 
+	local script = Instance.new('LocalScript', playerinfouserid)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	
+	local UID = player.UserId
+	
+	script.Parent.Text = "UserID: ".. UID ..""
+end
+coroutine.wrap(SNNTS_fake_script)()
+local function RCXSK_fake_script() -- playerinfousername.LocalScript 
+	local script = Instance.new('LocalScript', playerinfousername)
+
+	local players = game:GetService("Players")
+	script.Parent.Text = "Username: ".. game.Players.LocalPlayer.Name ..""
+end
+coroutine.wrap(RCXSK_fake_script)()
+local function BSFHIO_fake_script() -- playerinfodisplayname.LocalScript 
+	local script = Instance.new('LocalScript', playerinfodisplayname)
+
+	local players = game:GetService("Players")
+	script.Parent.Text = "DisplayName: ".. game.Players.LocalPlayer.DisplayName ..""
+end
+coroutine.wrap(BSFHIO_fake_script)()
+local function XZVX_fake_script() -- login.Script 
+	local script = Instance.new('Script', login)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent["whole gui"].Visible = false
+		script.Parent.Parent.Parent["Crimson"].Visible = true
+		script.Parent.Parent.Parent["TeapotEnabler"].Visible = true
+		script.Parent.Parent.Parent["Player Info"].Visible = true
+	end)
+end
+coroutine.wrap(XZVX_fake_script)()
+local function RSPAKO_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Text = "Player:".. game.Players.LocalPlayer.Name .. "/".. game.Players.LocalPlayer.DisplayName ..""
+end
+coroutine.wrap(RSPAKO_fake_script)()
+local function RBWYWYU_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	wait(3)
+	script.Parent:Destroy()
+end
+coroutine.wrap(RBWYWYU_fake_script)()
+local function NCLB_fake_script() -- Page1.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Page1)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(NCLB_fake_script)()
+local function SJDG_fake_script() -- INFYIELD.Script 
+	local script = Instance.new('Script', INFYIELD)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(SJDG_fake_script)()
+local function VVYBB_fake_script() -- CMDX.Script 
+	local script = Instance.new('Script', CMDX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+	end)
+end
+coroutine.wrap(VVYBB_fake_script)()
+local function FMJTYJD_fake_script() -- FatesAdmin.Script 
+	local script = Instance.new('Script', FatesAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+	end)
+end
+coroutine.wrap(FMJTYJD_fake_script)()
+local function RQHCNX_fake_script() -- Back.Script 
+	local script = Instance.new('Script', Back)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("no page to go back to!!!")
+	end)
+end
+coroutine.wrap(RQHCNX_fake_script)()
+local function DHCRNVG_fake_script() -- Next.Script 
+	local script = Instance.new('Script', Next)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Page1.Visible = false
+		script.Parent.Parent.Parent.Page2.Visible = true
+	end)
+end
+coroutine.wrap(DHCRNVG_fake_script)()
+local function WELR_fake_script() -- Activate.Script 
+	local script = Instance.new('Script', Activate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Crimson.title.ImageLabel.Visible = true
+	script.Parent.Parent.Parent.Crimson.title.ImageLabel1.Visible = true
+	end)
+end
+coroutine.wrap(WELR_fake_script)()
+local function OQPFTW_fake_script() -- Disable.Script 
+	local script = Instance.new('Script', Disable)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Crimson.title.ImageLabel.Visible = false
+		script.Parent.Parent.Parent.Crimson.title.ImageLabel1.Visible = false
+	end)
+end
+coroutine.wrap(OQPFTW_fake_script)()
+local function EWMRP_fake_script() -- TeapotEnabler.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', TeapotEnabler)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(EWMRP_fake_script)()
+local function DJCUCGZ_fake_script() -- PlayerInfo.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', PlayerInfo)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(DJCUCGZ_fake_script)()
+local function FYKMSGV_fake_script() -- playerinfousername_2.LocalScript 
+	local script = Instance.new('LocalScript', playerinfousername_2)
+
+	local players = game:GetService("Players")
+	script.Parent.Text = "Username: ".. game.Players.LocalPlayer.Name ..""
+end
+coroutine.wrap(FYKMSGV_fake_script)()
+local function OSSBA_fake_script() -- playerinfouserid_2.LocalScript 
+	local script = Instance.new('LocalScript', playerinfouserid_2)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	
+	local UID = player.UserId
+	
+	script.Parent.Text = "UserID: ".. UID ..""
+end
+coroutine.wrap(OSSBA_fake_script)()
+local function NUHLKAH_fake_script() -- playerinfodisplayname_2.LocalScript 
+	local script = Instance.new('LocalScript', playerinfodisplayname_2)
+
+	local players = game:GetService("Players")
+	script.Parent.Text = "DisplayName: ".. game.Players.LocalPlayer.DisplayName ..""
+end
+coroutine.wrap(NUHLKAH_fake_script)()
+local function IYCS_fake_script() -- Page2.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Page2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(IYCS_fake_script)()
+local function LUAN_fake_script() -- Back_2.Script 
+	local script = Instance.new('Script', Back_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Page1.Visible = true
+		script.Parent.Parent.Parent.Page2.Visible = false
+	end)
+end
+coroutine.wrap(LUAN_fake_script)()
+local function VSVF_fake_script() -- Next_2.Script 
+	local script = Instance.new('Script', Next_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		print("no page to go next to!!!")
+	end)
+end
+coroutine.wrap(VSVF_fake_script)()
+local function YRYYPG_fake_script() -- FatesAdmin_2.Script 
+	local script = Instance.new('Script', FatesAdmin_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V4.lua"))()
+	end)
+end
+coroutine.wrap(YRYYPG_fake_script)()
