@@ -620,7 +620,7 @@ local function XZVX_fake_script() -- login.Script
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent["whole gui"].Visible = false
-		script.Parent.Parent.Parent[Page1"].Visible = true
+		script.Parent.Parent.Parent["Page1"].Visible = true
 		script.Parent.Parent.Parent["TeapotEnabler"].Visible = true
 		script.Parent.Parent.Parent["Player Info"].Visible = true
 	end)
